@@ -1,0 +1,32 @@
+.assistant-note {
+  display: block;
+}
+
+.assistant-credits {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 7px;
+  font-size: 9px;
+}
+
+.assistant-credits a {
+  color: var(--leaf);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(55, 107, 76, 0.3);
+}
+
+.assistant-credits a:hover,
+.assistant-credits a:focus-visible {
+  color: var(--pine);
+  border-bottom-color: var(--pine);
+}
+
+@media (max-width: 420px) {
+  .assistant-credits {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
